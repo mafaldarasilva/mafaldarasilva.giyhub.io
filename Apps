@@ -1,0 +1,26 @@
+mport React from 'react';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import WhyFit from './components/WhyFit';
+import Footer from './components/Footer';
+
+const App: React.FC = () => {
+  return (
+    <div className="bg-slate-900 text-slate-300 font-sans antialiased">
+      <main className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <Hero />
+        <div className="space-y-16 md:space-y-24">
+          <About />
+          <Skills />
+          <Experience />
+          <WhyFit />
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
